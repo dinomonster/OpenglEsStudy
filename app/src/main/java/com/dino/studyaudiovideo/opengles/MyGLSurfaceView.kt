@@ -8,11 +8,12 @@ class MyGLSurfaceView(context: Context, attrs: AttributeSet?) : GLSurfaceView(co
     private val mRenderer: MyGLRenderer
     init {
         // Create an OpenGL ES 2.0 context
-        setEGLContextClientVersion(2)
+        setEGLContextClientVersion(3)
 
         mRenderer = MyGLRenderer(context)
 
         // Set the Renderer for drawing on the GLSurfaceView
         setRenderer(mRenderer)
+        this.renderMode = GLSurfaceView.RENDERMODE_CONTINUOUSLY
     }
 }
