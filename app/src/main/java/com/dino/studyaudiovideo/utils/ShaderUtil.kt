@@ -1,13 +1,8 @@
 package com.dino.studyaudiovideo.utils
 
-import android.Manifest.permission_group.LOCATION
 import android.content.res.Resources
 import android.opengl.GLES32
 import android.util.Log
-import java.io.BufferedOutputStream
-import java.io.ByteArrayOutputStream
-import java.io.FileOutputStream
-import java.io.InputStream
 import java.nio.charset.Charset
 
 object ShaderUtil {
