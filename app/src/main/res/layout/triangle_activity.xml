@@ -7,17 +7,23 @@
     tools:context="com.dino.studyaudiovideo.MainActivity">
 
     <Button
-        android:id="@+id/audio_btn"
+        android:id="@+id/triangle_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:text="audio" />
+        android:text="三角形" />
 
     <Button
-        android:id="@+id/opengles_btn"
+        android:id="@+id/triangle_camera_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="绘制三角形"
-        app:layout_constraintTop_toBottomOf="@+id/audio_btn"/>
+        android:text="摄像机下的三角形"
+        app:layout_constraintTop_toBottomOf="@+id/triangle_btn"/>
+
+    <Button
+        android:id="@+id/color_triangle_camera_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="摄像机下的彩色三角形"
+        app:layout_constraintTop_toBottomOf="@+id/triangle_camera_btn"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.dino.studyaudiovideo.audio.AudioDemoActivity" />
-        <activity android:name=".opengles.OpenGLESActivity" />
+        <activity android:name=".triangle.OpenGLESActivity" />
+        <activity android:name=".triangle.TriangleActivity" />
     </application>
 
 </manifest>

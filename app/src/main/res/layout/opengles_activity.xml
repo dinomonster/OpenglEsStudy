@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.dino.studyaudiovideo.MainActivity">
 
-    <com.dino.studyaudiovideo.opengles.MyGLSurfaceView
-        android:id="@+id/tv"
+    <com.dino.studyaudiovideo.triangle.MyGLSurfaceView
+        android:id="@+id/glsv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
