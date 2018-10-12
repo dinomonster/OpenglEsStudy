@@ -1,19 +1,18 @@
-package com.dino.studyaudiovideo.triangle
+package com.dino.studyaudiovideo.shape
 
 import android.content.Context
 import android.opengl.GLSurfaceView
 import android.util.AttributeSet
-import android.view.MotionEvent
 import com.dino.studyaudiovideo.base.Shape
 
-class MyGLSurfaceView(context: Context, attrs: AttributeSet?) : GLSurfaceView(context, attrs) {
-    private val mRenderer: MyGLRenderer
+class ShapeGLSurfaceView(context: Context, attrs: AttributeSet?) : GLSurfaceView(context, attrs) {
+    private val mRenderer: ShapeGLRenderer
 
     init {
         // Create an OpenGL ES 3.0 context
         setEGLContextClientVersion(3)
 
-        mRenderer = MyGLRenderer(this)
+        mRenderer = ShapeGLRenderer(this)
 
         // Set the Renderer for drawing on the GLSurfaceView
         setRenderer(mRenderer)

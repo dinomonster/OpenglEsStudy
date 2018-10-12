@@ -1,11 +1,10 @@
-package com.dino.studyaudiovideo.triangle
+package com.dino.studyaudiovideo.shape
 
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.FloatBuffer
 import android.opengl.GLES32
 import android.opengl.Matrix
-import android.os.SystemClock
 import android.view.View
 import com.dino.studyaudiovideo.base.Shape
 import com.dino.studyaudiovideo.utils.ShaderUtil
@@ -16,13 +15,13 @@ import javax.microedition.khronos.opengles.GL10
  *
  * mVertexBuffer指的是vertex buffer ,将顶点数据灿在vertex buffer里面后后续的管线操作就可以直接从buffer取的数据，这样加快了数据的读取
  */
-class Triangle(mView: View) : Shape(mView) {
+class TriangleCamera(mView: View) : Shape(mView) {
     private val mProjectionMatrix = FloatArray(16)
     private val mViewMatrix = FloatArray(16)
     private val mMVPMatrix = FloatArray(16)
-    private val mRotationMatrix = FloatArray(16)
 
     companion object {
+        // 每个顶点的坐标数
         internal val COORDS_PER_VERTEX = 3
         internal var triangleCoords = floatArrayOf(
                 0.0f,  0.622008459f, 0.0f, // top
@@ -33,7 +32,7 @@ class Triangle(mView: View) : Shape(mView) {
         internal var color = floatArrayOf(1.0f, 1.0f, 1.0f, 1.0f)
     }
 
-    var mVertexShader = ShaderUtil.loadFromAssetsFile("triangle.glsl", mView.context.resources)//顶点着色器
+    var mVertexShader = ShaderUtil.loadFromAssetsFile("triangleCamera.glsl", mView.context.resources)//顶点着色器
     var mFragmentShader = ShaderUtil.loadFromAssetsFile("frag.glsl", mView.context.resources)//片元着色器
     var mProgram = ShaderUtil.createProgram(mVertexShader, mFragmentShader)//自定义渲染管线程序id
     private var mPositionHandle: Int = 0  //顶点位置属性引用id
@@ -61,14 +60,6 @@ class Triangle(mView: View) : Shape(mView) {
 
 
     override fun onDrawFrame(gl: GL10?) {
-        // 创建旋转矩阵
-        val time = SystemClock.uptimeMillis() % 4000L
-        val angle = 0.090f * time.toInt()
-        Matrix.setRotateM(mRotationMatrix, 0, angle, 0f, 0f, -1.0f)
-        val scratch = FloatArray(16)
-        // 两个矩阵相乘  合并旋转矩阵和之前的合并矩阵
-        Matrix.multiplyMM(scratch, 0, mMVPMatrix, 0, mRotationMatrix, 0)
-
         //将程序加入到OpenGLES3.2环境
         GLES32.glUseProgram(mProgram)
 
@@ -76,7 +67,7 @@ class Triangle(mView: View) : Shape(mView) {
         mMVPMatrixHandle = GLES32.glGetUniformLocation(mProgram, "uMVPMatrix")
 
         // 将投影和视图转换传递给着色器
-        GLES32.glUniformMatrix4fv(mMVPMatrixHandle, 1, false, scratch, 0)
+        GLES32.glUniformMatrix4fv(mMVPMatrixHandle, 1, false, mMVPMatrix, 0)
 
         //获取顶点着色器的vPosition成员句柄
         mPositionHandle = GLES32.glGetAttribLocation(mProgram, "vPosition")

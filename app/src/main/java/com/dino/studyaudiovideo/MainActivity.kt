@@ -2,7 +2,7 @@ package com.dino.studyaudiovideo
 
 import android.view.View
 import com.dino.studyaudiovideo.base.BaseActivity
-import com.dino.studyaudiovideo.triangle.TriangleActivity
+import com.dino.studyaudiovideo.shape.ShapeListActivity
 import com.dino.studyaudiovideo.utils.ViewUtils
 import kotlinx.android.synthetic.main.main_activity.*
 
@@ -20,7 +20,7 @@ class MainActivity : BaseActivity(),View.OnClickListener {
 //                nextActivity(AudioDemoActivity::class.java)
 //            }
             opengles_btn->{
-                nextActivity(TriangleActivity::class.java)
+                nextActivity(ShapeListActivity::class.java)
             }
         }
     }

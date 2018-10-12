@@ -20,10 +20,36 @@
         app:layout_constraintTop_toBottomOf="@+id/triangle_btn"/>
 
     <Button
-        android:id="@+id/color_triangle_camera_btn"
+        android:id="@+id/colorful_triangle_camera_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="摄像机下的彩色三角形"
         app:layout_constraintTop_toBottomOf="@+id/triangle_camera_btn"/>
+
+    <Button
+        android:id="@+id/move_colorful_triangle_camera_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="摄像机下旋转的彩色三角形"
+        app:layout_constraintTop_toBottomOf="@+id/colorful_triangle_camera_btn"/>
+    <Button
+        android:id="@+id/square_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="摄像机下的正方形"
+        app:layout_constraintTop_toBottomOf="@+id/move_colorful_triangle_camera_btn"/>
+    <Button
+        android:id="@+id/oval_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="摄像机下的圆形"
+        app:layout_constraintTop_toBottomOf="@+id/square_btn"/>
+
+    <Button
+        android:id="@+id/cube_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正方体"
+        app:layout_constraintTop_toBottomOf="@+id/oval_btn"/>
 
 </android.support.constraint.ConstraintLayout>

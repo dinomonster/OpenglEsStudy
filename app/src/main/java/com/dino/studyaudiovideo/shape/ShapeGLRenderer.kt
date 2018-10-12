@@ -1,16 +1,13 @@
-package com.dino.studyaudiovideo.triangle
+package com.dino.studyaudiovideo.shape
 
-import android.content.Context
 import android.opengl.GLES32
-import android.opengl.GLSurfaceView
-import android.opengl.Matrix
 import android.view.View
 import com.dino.studyaudiovideo.base.Shape
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 
 
-class MyGLRenderer(mView: View) : Shape(mView) {
+class ShapeGLRenderer(mView: View) : Shape(mView) {
     private var shape: Shape? = null
     private var clazz: Class<out Shape> = Triangle::class.java
 
