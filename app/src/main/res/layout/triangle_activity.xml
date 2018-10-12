@@ -1,55 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.dino.studyaudiovideo.MainActivity">
 
-    <Button
-        android:id="@+id/triangle_btn"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="三角形" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/triangle_camera_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="摄像机下的三角形"
-        app:layout_constraintTop_toBottomOf="@+id/triangle_btn"/>
+        <Button
+            android:id="@+id/triangle_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="三角形" />
 
-    <Button
-        android:id="@+id/colorful_triangle_camera_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="摄像机下的彩色三角形"
-        app:layout_constraintTop_toBottomOf="@+id/triangle_camera_btn"/>
+        <Button
+            android:id="@+id/triangle_camera_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="摄像机下的三角形"
+            app:layout_constraintTop_toBottomOf="@+id/triangle_btn" />
 
-    <Button
-        android:id="@+id/move_colorful_triangle_camera_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="摄像机下旋转的彩色三角形"
-        app:layout_constraintTop_toBottomOf="@+id/colorful_triangle_camera_btn"/>
-    <Button
-        android:id="@+id/square_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="摄像机下的正方形"
-        app:layout_constraintTop_toBottomOf="@+id/move_colorful_triangle_camera_btn"/>
-    <Button
-        android:id="@+id/oval_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="摄像机下的圆形"
-        app:layout_constraintTop_toBottomOf="@+id/square_btn"/>
+        <Button
+            android:id="@+id/colorful_triangle_camera_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="摄像机下的彩色三角形"
+            app:layout_constraintTop_toBottomOf="@+id/triangle_camera_btn" />
 
-    <Button
-        android:id="@+id/cube_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="正方体"
-        app:layout_constraintTop_toBottomOf="@+id/oval_btn"/>
+        <Button
+            android:id="@+id/move_colorful_triangle_camera_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="摄像机下旋转的彩色三角形"
+            app:layout_constraintTop_toBottomOf="@+id/colorful_triangle_camera_btn" />
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/square_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="摄像机下的正方形"
+            app:layout_constraintTop_toBottomOf="@+id/move_colorful_triangle_camera_btn" />
+
+        <Button
+            android:id="@+id/oval_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="摄像机下的圆形"
+            app:layout_constraintTop_toBottomOf="@+id/square_btn" />
+
+        <Button
+            android:id="@+id/cube_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正方体"
+            app:layout_constraintTop_toBottomOf="@+id/oval_btn" />
+        <Button
+            android:id="@+id/cone_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="圆锥"
+            app:layout_constraintTop_toBottomOf="@+id/cube_btn" />
+        <Button
+            android:id="@+id/cylinder_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="圆柱"
+            app:layout_constraintTop_toBottomOf="@+id/cone_btn" />
+        <Button
+            android:id="@+id/ball_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="球体"
+            app:layout_constraintTop_toBottomOf="@+id/cylinder_btn" />
+        <Button
+            android:id="@+id/ballwithlight_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="带光源的球体"
+            app:layout_constraintTop_toBottomOf="@+id/ball_btn" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

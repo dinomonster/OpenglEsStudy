@@ -15,7 +15,9 @@ class ShapeListActivity : BaseActivity(), View.OnClickListener {
     override fun initData() {
         super.initData()
         ViewUtils.setOnClickListeners(this,
-                triangle_btn, triangle_camera_btn, colorful_triangle_camera_btn,move_colorful_triangle_camera_btn,square_btn,oval_btn,cube_btn)
+                triangle_btn, triangle_camera_btn, colorful_triangle_camera_btn,
+                move_colorful_triangle_camera_btn,square_btn,oval_btn,cube_btn,
+                cone_btn,cylinder_btn,ball_btn,ballwithlight_btn)
     }
 
     override fun onClick(v: View?) {
@@ -47,6 +49,8 @@ class ShapeListActivity : BaseActivity(), View.OnClickListener {
             cube_btn -> {
                 startActivity(Intent(TriangleActivity@this,ShapeActivity::class.java)
                         .apply { putExtra("name",Cube::class.java) })
+            }
+            cone_btn -> {
             }
         }
     }
