@@ -1,4 +1,4 @@
-package com.dino.studyaudiovideo.utils
+package com.dino.openglesstudy.utils
 
 import android.content.res.Resources
 import android.opengl.GLES32

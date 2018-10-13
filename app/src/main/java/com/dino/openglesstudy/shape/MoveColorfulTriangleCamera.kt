@@ -1,4 +1,4 @@
-package com.dino.studyaudiovideo.shape
+package com.dino.openglesstudy.shape
 
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
@@ -7,8 +7,8 @@ import android.opengl.GLES32
 import android.opengl.Matrix
 import android.os.SystemClock
 import android.view.View
-import com.dino.studyaudiovideo.base.Shape
-import com.dino.studyaudiovideo.utils.ShaderUtil
+import com.dino.openglesstudy.base.Shape
+import com.dino.openglesstudy.utils.ShaderUtil
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 

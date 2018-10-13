@@ -1,4 +1,4 @@
-package com.dino.studyaudiovideo.audio
+package com.dino.openglesstudy.audio
 
 import android.media.AudioFormat
 

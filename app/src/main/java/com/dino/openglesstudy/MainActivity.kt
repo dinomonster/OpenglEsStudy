@@ -1,9 +1,9 @@
-package com.dino.studyaudiovideo
+package com.dino.openglesstudy
 
 import android.view.View
-import com.dino.studyaudiovideo.base.BaseActivity
-import com.dino.studyaudiovideo.shape.ShapeListActivity
-import com.dino.studyaudiovideo.utils.ViewUtils
+import com.dino.openglesstudy.base.BaseActivity
+import com.dino.openglesstudy.shape.ShapeListActivity
+import com.dino.openglesstudy.utils.ViewUtils
 import kotlinx.android.synthetic.main.main_activity.*
 
 class MainActivity : BaseActivity(),View.OnClickListener {

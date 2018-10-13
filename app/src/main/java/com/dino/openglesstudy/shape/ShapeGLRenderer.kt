@@ -1,8 +1,8 @@
-package com.dino.studyaudiovideo.shape
+package com.dino.openglesstudy.shape
 
 import android.opengl.GLES32
 import android.view.View
-import com.dino.studyaudiovideo.base.Shape
+import com.dino.openglesstudy.base.Shape
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 

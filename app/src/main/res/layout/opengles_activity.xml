@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dino.studyaudiovideo.MainActivity">
+    tools:context="com.dino.openglesstudy.MainActivity">
 
-    <com.dino.studyaudiovideo.shape.ShapeGLSurfaceView
+    <com.dino.openglesstudy.shape.ShapeGLSurfaceView
         android:id="@+id/glsv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

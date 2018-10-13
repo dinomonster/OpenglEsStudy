@@ -1,9 +1,9 @@
-package com.dino.studyaudiovideo.shape
+package com.dino.openglesstudy.shape
 
 import android.content.Context
 import android.opengl.GLSurfaceView
 import android.util.AttributeSet
-import com.dino.studyaudiovideo.base.Shape
+import com.dino.openglesstudy.base.Shape
 
 class ShapeGLSurfaceView(context: Context, attrs: AttributeSet?) : GLSurfaceView(context, attrs) {
     private val mRenderer: ShapeGLRenderer

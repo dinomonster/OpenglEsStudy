@@ -1,4 +1,4 @@
-package com.dino.studyaudiovideo.base
+package com.dino.openglesstudy.base
 
 import android.content.Intent
 import android.os.Bundle

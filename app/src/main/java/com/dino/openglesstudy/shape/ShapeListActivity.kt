@@ -1,10 +1,10 @@
-package com.dino.studyaudiovideo.shape
+package com.dino.openglesstudy.shape
 
 import android.content.Intent
 import android.view.View
-import com.dino.studyaudiovideo.R
-import com.dino.studyaudiovideo.base.BaseActivity
-import com.dino.studyaudiovideo.utils.ViewUtils
+import com.dino.openglesstudy.R
+import com.dino.openglesstudy.base.BaseActivity
+import com.dino.openglesstudy.utils.ViewUtils
 import kotlinx.android.synthetic.main.triangle_activity.*
 
 class ShapeListActivity : BaseActivity(), View.OnClickListener {

@@ -1,4 +1,4 @@
-package com.dino.studyaudiovideo.utils
+package com.dino.openglesstudy.utils
 
 import android.view.View
 import android.widget.TextView

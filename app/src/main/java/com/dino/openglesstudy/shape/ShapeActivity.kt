@@ -1,8 +1,8 @@
-package com.dino.studyaudiovideo.shape
+package com.dino.openglesstudy.shape
 
-import com.dino.studyaudiovideo.R
-import com.dino.studyaudiovideo.base.BaseActivity
-import com.dino.studyaudiovideo.base.Shape
+import com.dino.openglesstudy.R
+import com.dino.openglesstudy.base.BaseActivity
+import com.dino.openglesstudy.base.Shape
 import kotlinx.android.synthetic.main.opengles_activity.*
 
 class ShapeActivity : BaseActivity() {

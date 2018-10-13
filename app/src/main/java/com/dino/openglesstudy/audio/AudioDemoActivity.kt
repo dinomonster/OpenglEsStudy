@@ -1,8 +1,8 @@
-package com.dino.studyaudiovideo.audio
+package com.dino.openglesstudy.audio
 
 import android.Manifest
-import com.dino.studyaudiovideo.R
-import com.dino.studyaudiovideo.base.BaseActivity
+import com.dino.openglesstudy.R
+import com.dino.openglesstudy.base.BaseActivity
 import android.os.AsyncTask
 import android.os.Environment.DIRECTORY_MUSIC
 import android.support.v4.app.ActivityCompat
@@ -14,9 +14,9 @@ import android.os.Environment
 import android.util.Log
 import android.view.View
 import android.widget.Button
-import com.dino.studyaudiovideo.audio.AudioConfig.AUDIO_FORMAT
-import com.dino.studyaudiovideo.audio.AudioConfig.CHANNEL_CONFIG
-import com.dino.studyaudiovideo.audio.AudioConfig.SAMPLE_RATE_INHZ
+import com.dino.openglesstudy.audio.AudioConfig.AUDIO_FORMAT
+import com.dino.openglesstudy.audio.AudioConfig.CHANNEL_CONFIG
+import com.dino.openglesstudy.audio.AudioConfig.SAMPLE_RATE_INHZ
 import kotlinx.android.synthetic.main.audio_activity.*
 import java.io.*
 

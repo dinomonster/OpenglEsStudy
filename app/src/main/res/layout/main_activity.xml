@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dino.studyaudiovideo.MainActivity">
+    tools:context="com.dino.openglesstudy.MainActivity">
 
     <Button
         android:id="@+id/audio_btn"
