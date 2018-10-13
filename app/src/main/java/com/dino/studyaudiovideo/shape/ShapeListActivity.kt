@@ -51,6 +51,18 @@ class ShapeListActivity : BaseActivity(), View.OnClickListener {
                         .apply { putExtra("name",Cube::class.java) })
             }
             cone_btn -> {
+                startActivity(Intent(TriangleActivity@this,ShapeActivity::class.java)
+                        .apply { putExtra("name",Cone::class.java) })
+            }
+            cylinder_btn -> {
+                startActivity(Intent(TriangleActivity@this,ShapeActivity::class.java)
+                        .apply { putExtra("name",Cylinder::class.java) })
+            }
+            ball_btn->{
+
+            }
+            ballwithlight_btn->{
+
             }
         }
     }
