@@ -25,9 +25,9 @@ class Cylinder(mView: View) : Shape(mView) {
 
     private val mVertexBuffer: FloatBuffer//顶点坐标数据缓冲
 
-    var mVertexShader = ShaderUtil.loadFromAssetsFile("cylinderVertex.glsl", mView.context.resources)//顶点着色器
-    var mFragmentShader = ShaderUtil.loadFromAssetsFile("colorfulfrag.glsl", mView.context.resources)//片元着色器
-    var mProgram = ShaderUtil.createProgram(mVertexShader, mFragmentShader)//自定义渲染管线程序id
+    private var mVertexShader = ShaderUtil.loadFromAssetsFile("cylinderVertex.glsl", mView.context.resources)//顶点着色器
+    private var mFragmentShader = ShaderUtil.loadFromAssetsFile("colorfulfrag.glsl", mView.context.resources)//片元着色器
+    private var mProgram = ShaderUtil.createProgram(mVertexShader, mFragmentShader)//自定义渲染管线程序id
 
     private var mPositionHandle: Int = 0  //顶点位置属性引用id
     private var mMVPMatrixHandle: Int = 0  //变换矩阵
